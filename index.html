@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Polymer Layout</title>
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+	<link rel="stylesheet" href="styles/main.css">
+	
+	<link rel="import" href="bower_components/iron-icons/iron-icons.html">
+	<link rel="import" href="bower_components/paper-styles/paper-styles-classes.html">
+	<link rel="import" href="bower_components/paper-drawer-panel/paper-drawer-panel.html">
+	<link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
+	<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+	<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+	<link rel="import" href="bower_components/paper-menu/paper-menu.html">
+	<link rel="import" href="bower_components/paper-material/paper-material.html">
+	<link rel="import" href="bower_components/paper-item/paper-item.html">
+	<link rel="import" href="bower_components/paper-fab/paper-fab.html">
+
+</head>
+<body unresolved>
+
+	<paper-drawer-panel responsive-width="1280px">
+
+		<div class="nav" drawer>
+
+			<paper-toolbar>
+				<paper-icon-button icon="assignment" class="logo"></paper-icon-button>
+				<strong>App Name</strong>
+			</paper-toolbar>
+
+			<paper-menu>
+				<paper-item>
+                    <iron-icon class="menu-icon" icon="cached"></iron-icon>
+                    <span>Menu One</span>
+                </paper-item>
+				<paper-item>
+                    <iron-icon class="menu-icon" icon="bookmark"></iron-icon>
+                    <span>Menu Two</span>
+                </paper-item>
+                <paper-item>
+                    <iron-icon class="menu-icon" icon="verified-user"></iron-icon>
+                    <span>Menu Three</span>
+                </paper-item>
+			</paper-menu>
+
+			<footer>&copy; 2015 - All right reserved.</footer>
+		</div>
+
+		<paper-header-panel main mode="waterfall-tall" class="main">
+
+			<paper-toolbar class="tall" justify="end">
+				<paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+				
+				<div style="flex: 1 1 1e-9px;"></div>
+				
+				<paper-icon-button icon="search"></paper-icon-button>
+				<paper-icon-button icon="more-vert"></paper-icon-button>
+
+				<h1 title class="bottom">Page Title</h1>
+			</paper-toolbar>
+
+			<div class="content">
+				<paper-material class="paper"></paper-material>
+				<paper-material class="paper"></paper-material>
+				<paper-fab icon="add" class="primary-action"></paper-fab>
+			</div>
+
+		</paper-header-panel>
+
+	</paper-drawer-panel>
+
+</body>
+</html>

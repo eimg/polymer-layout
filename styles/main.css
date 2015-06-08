@@ -1,0 +1,62 @@
+body {
+    background: #fafafa;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.logo {
+	color:#3F51B5;
+}
+
+.nav {
+	border-right: 1px solid #ddd;
+}
+
+.menu-icon {
+	margin-right: 10px;
+	color: #aaa;
+}
+
+.nav paper-toolbar {
+	background: #fff;
+	color: #333;
+	border-bottom: 1px solid #ddd;
+}
+
+.main {
+	background-color: #eee;
+}
+
+.content {
+	padding: 0 16px;
+}
+
+paper-material.paper {
+	min-height: 400px;
+	max-width: 640px;
+	margin: 16px auto;
+	background-color: #fff;
+}
+
+.primary-action {
+	position: fixed;
+	bottom: 20px;
+	right: 50px;
+}
+
+footer {
+	color: #999;
+	font-size: 12px;
+	border-top: 1px solid #ddd;
+	padding: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+	#bottomBar.paper-toolbar {
+		left: 40px;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+}
